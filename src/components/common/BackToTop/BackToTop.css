@@ -1,0 +1,16 @@
+.back-to-top{
+    height: 3rem;
+    width: 3em;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    margin: 1.5rem;
+    cursor: pointer;
+}

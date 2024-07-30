@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+:root{
+    --white: #fff;
+    --black: #111;
+    --blue: #3a80e9;
+    --grey:#888;
+    --darkgrey: #1b1b1b;
+    --green: #61c96f;
+    --red: #f94141;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+::selection{
+    background-color: var(--green);
+    color: var(--green);
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2d3212;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b7700c;
+    border-radius: 1.5em;
+
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6e7530;
+  }
+
+  a{
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  img{ 
+    -webkit-user-drag: none;
+  }
+
+  .grey-wrapper{
+    display: block;
+    width: 90%;
+    background-color: var(--darkgrey);
+    margin: 1.5rem auto;
+    border-radius: 0.8rem;
+    padding: 1rem 1rem;
+  }
