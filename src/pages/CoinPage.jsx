@@ -87,9 +87,9 @@ const CoinPage = () => {
             <LineChart chartData={chartData} />
           </div>
           <CoinInfo heading={coinData.name} desc={coinData.desc} />
+          <Footer />
         </>
       )}
-          <Footer />
     </div>
   );
 };
