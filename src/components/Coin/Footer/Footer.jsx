@@ -10,10 +10,10 @@ const Footer = () => {
       <div className="footer-center">
         <h2>Get To Know Us</h2>
         <div className="anchor">
-          <a href="">Terms Of Service</a>
-          <a href="">Privacy Policy</a>
-          <a href="">FAQ</a>
-          <a href="">About Us</a>
+          <a href="#">Terms Of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">FAQ</a>
+          <a href="#">About Us</a>
         </div>
       </div>
       <div className="footer-right">
