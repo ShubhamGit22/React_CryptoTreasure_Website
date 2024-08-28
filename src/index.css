@@ -27,7 +27,7 @@ body{
 
 ::selection{
     background-color: var(--green);
-    color: var(--green);
+    color: var(--white);
 }
 
 

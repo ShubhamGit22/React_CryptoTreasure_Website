@@ -13,7 +13,6 @@ const Header = () => {
                 <Link to="/dashboard"> 
                     <Button text={"dashboard"} 
                         // outlined={true}
-                    onClick={()=>console.log("Btn clicked")}
                     />
                 </Link>
             </div>
