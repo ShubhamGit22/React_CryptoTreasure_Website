@@ -4,6 +4,7 @@ export const getCoinData = (id) => {
    const myData = axios
     .get(`https://api.coingecko.com/api/v3/coins/${id}`)                          //Coin Data by ID - jQuery
     .then((response) => {
+        //  console.log(response)
         return response.data
     })
     .catch((error) => {

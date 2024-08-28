@@ -8,8 +8,8 @@ import CoinInfo from "../components/Coin/CoinInfo/CoinInfo";
 import { getCoinData } from "../functions/getCoindata";
 import { getCoinPrices } from "../functions/getCoinPrices";
 import LineChart from "../components/Coin/LineChart/LineChart";
-import SelectDays from "../components/Coin/SelectDays/SelectDays";
-import { settingChartData } from "../functions/settingChartData";
+// import SelectDays from "../components/Coin/SelectDays/SelectDays";
+// import { settingChartData } from "../functions/settingChartData";
 import { convertDate } from "../functions/ConvertDate";
 import Footer from "../components/Coin/Footer/Footer";
 
@@ -40,11 +40,11 @@ const CoinPage = () => {
 
         setChartData({
           // labels: ["Mon", "Tues", "Wed", "thur", "Fri", "Sat"],
-          labels: prices.map((price) => convertDate(price[0])),
+          labels: prices.map((price) => convertDate(price[0])),                             //x axis
           datasets: [
             {
               // data:[12, 15, 12, 9, 20],
-              data: prices.map((price) => price[1]),
+              data: prices.map((price) => price[1]),                                          //y axis
               borderColor: "#3a80e9",
               backgroundColor: "transparent",
               borderWidth: 1,
@@ -60,18 +60,7 @@ const CoinPage = () => {
     }
   }
 
-  const handleDaysChange = async (event) => {
-    setIsLoading(true);
 
-    const prices = await getCoinPrices(id, event.target.value);
-    if (prices.length > 0) {
-      console.log("WoHoooo");
-
-      settingChartData(setChartData, prices);
-      setIsLoading(false);
-    }
-    setDays(event.target.value);
-  };
   return (
     <div>
       <Header />
@@ -83,7 +72,7 @@ const CoinPage = () => {
             <List coin={coinData} />
           </div>
           <div className="grey-wrapper">
-            <SelectDays days={days} handleDaysChange={handleDaysChange} />
+            <h3>The price($) is on "Y" axis and the time duration is on "X" axis.</h3>
             <LineChart chartData={chartData} />
           </div>
           <CoinInfo heading={coinData.name} desc={coinData.desc} />
