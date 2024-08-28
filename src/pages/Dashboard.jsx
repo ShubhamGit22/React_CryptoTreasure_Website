@@ -26,10 +26,11 @@ const DashboardPage = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=100"
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=100"                           //Coins List with Market Data- jQuery
       )
       .then((response) => {
         // console.log("RESPONSE>>>", response)
+        // console.log(response.data)
         setCoins(response.data);
         setIsLoading(false);
       })

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getCoinData = (id) => {
    const myData = axios
-    .get(`https://api.coingecko.com/api/v3/coins/${id}`)
+    .get(`https://api.coingecko.com/api/v3/coins/${id}`)                          //Coin Data by ID - jQuery
     .then((response) => {
         return response.data
     })

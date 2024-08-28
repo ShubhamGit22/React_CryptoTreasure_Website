@@ -27,7 +27,7 @@ export default function TabsComponent({coins}) {
     textTransform: "capitalize"
   }
 
-  const theme = createTheme({                                                       //createTheme function is called, passing an object with custom theme settings.
+  const theme = createTheme({                                                       //createTheme hook is used, passing an object with custom theme settings.
     palette:{
         primary:{
             main: "#ff0000"
@@ -69,3 +69,4 @@ export default function TabsComponent({coins}) {
     </ThemeProvider>
   );
 }
+
